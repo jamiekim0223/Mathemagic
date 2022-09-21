@@ -22,7 +22,7 @@ public class Mathemagic {
         out.printf("Fireball blast area: %.2f\n", blastArea(7.5));                                   //  should yield 176.71
 
         //testing atmoShift
-        out.printf("Blocking temperature value: %.2f\n", atmoShift(98.3));                            //  should yield 37.00
+        out.printf("Blocking temperature value: %.2f\n", atmoShift(98.6));                            //  should yield 37.00
 
         //testing elevationVect
         out.printf("Enemy attack coming at elevation vector: %.2f\n", elevationVect(1, 9, 14, 2));     //  should yield -0.54
@@ -57,8 +57,7 @@ public class Mathemagic {
 
 
     public static double atmoShift(double fahr) {
-        double Temp = (5 * (fahr - 32) / 9);
-        return Math.round(Temp);
+        return 5 * (fahr - 32) / 9;
     }
 
 
